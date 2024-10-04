@@ -1,0 +1,23 @@
+# Post-Synthesis Gate-Level Simulation Variables
+sim.inputs:
+  input_files:
+    - "build/syn-rundir/DigitalLDOLogic.mapped.v"
+    - "src/DigitalLDOLogic_tb.v"
+  level: "syn"
+  timing_annotated: true
+  sdf_file: "build/syn-rundir/DigitalLDOLogic.mapped.sdf"
+  all_regs: "build/syn-rundir/find_regs_paths.json"
+  seq_cells: "build/syn-rundir/find_regs_cells.json"
+  timescale: "1ns/1ps"
+  options:
+    - "-notice"
+    - "-line"
+    - "+lint=all"
+    - "+v2k"
+    - "-debug"
+    - "-sverilog"
+  top_module: "DigitalLDOLogic"
+  tb_name: "DigitalLDOLogic_tb"
+  defines: 
+    - "CLOCK_PERIOD=100.00"
+    - "UNIT_DELAY=#1"

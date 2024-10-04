@@ -1,0 +1,385 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/vcdplus.vpd -design V1} {gui_open_db -file vcdplus.vpd} {gui_open_db -file sim/tb_DigitalLDOLogic.vpd}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1203
+gui_set_state_value -category Layout -key child_console_size_y -value 176
+gui_set_state_value -category Layout -key child_data_size_x -value 171
+gui_set_state_value -category Layout -key child_data_size_y -value 423
+gui_set_state_value -category Layout -key child_driver_size_x -value 955
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 171
+gui_set_state_value -category Layout -key child_hier_size_y -value 423
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 864
+gui_set_state_value -category Layout -key child_source_size_y -value 418
+gui_set_state_value -category Layout -key child_wave_colvalue -value 100
+gui_set_state_value -category Layout -key child_wave_left -value 227
+gui_set_state_value -category Layout -key child_wave_right -value 721
+gui_set_state_value -category Layout -key main_pos_x -value 78
+gui_set_state_value -category Layout -key main_pos_y -value 73
+gui_set_state_value -category Layout -key main_size_x -value 1281
+gui_set_state_value -category Layout -key main_size_y -value 770
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 958
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 545
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 383
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 178
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1336
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 823
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file vcdplus.vpd
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.clk   }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.clk  DigitalLDOLogic_tb.rst  DigitalLDOLogic_tb.comp_in  {DigitalLDOLogic_tb.out[9:0]}   }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.comp_in   }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.clk   }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.clk  DigitalLDOLogic_tb.rst  DigitalLDOLogic_tb.comp_in  {DigitalLDOLogic_tb.out[9:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { DigitalLDOLogic_tb.clk DigitalLDOLogic_tb.rst DigitalLDOLogic_tb.comp_in {DigitalLDOLogic_tb.out[9:0]} } -insertionbar
+gui_marker_move -id  Wave.1 C1 59
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.out[9:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_marker_move -id  Wave.1 C1 18319
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110593
+gui_wv_zoom_timerange -id  Wave.1 0 110932
+gui_wv_zoom_timerange -id  Wave.1 0 119244
+gui_wv_zoom_timerange -id  Wave.1 0 125011
+gui_wv_zoom_timerange -id  Wave.1 0 125011
+gui_wv_zoom_timerange -id  Wave.1 0 125180
+gui_wv_zoom_timerange -id  Wave.1 0 124672
+gui_wv_zoom_timerange -id  Wave.1 0 127555
+gui_wv_zoom_timerange -id  Wave.1 0 129591
+gui_wv_zoom_timerange -id  Wave.1 0 132305
+gui_wv_zoom_timerange -id  Wave.1 0 132983
+gui_wv_zoom_timerange -id  Wave.1 0 133322
+gui_wv_zoom_timerange -id  Wave.1 0 134679
+gui_wv_zoom_timerange -id  Wave.1 0 135527
+gui_wv_zoom_timerange -id  Wave.1 0 135867
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_marker_move -id  Wave.1 C1 1060
+gui_marker_move -id  Wave.1 C1 12582
+gui_get_drivers -id Wave.1 -signal {DigitalLDOLogic_tb.out[9:0]}
+gui_wv_zoom_timerange -id  Wave.1 5428 77008
+gui_wv_zoom_timerange -id  Wave.1 6166 59069
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.rst   }
+gui_marker_move -id  Wave.1 C1 10000
+gui_wv_zoom_timerange -id  Wave.1 7661 18163
+gui_wv_zoom_timerange -id  Wave.1 9283 13085
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_save_session -reload -default_file
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {false}
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {true}
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 350 38452
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 20000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 29873
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 30000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 40000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_list_select -id Wave.1 -selected  {  }
+gui_save_session -reload -default_file
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {false}
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {true}
+gui_wv_zoom_timerange -id  Wave.1 26971 67071
+gui_wv_zoom_timerange -id  Wave.1 28826 39767
+gui_wv_zoom_timerange -id  Wave.1 29916 33757
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 5314 28233
+gui_marker_move -id  Wave.1 C1 10000
+gui_marker_move -id  Wave.1 C1 9652
+gui_marker_move -id  Wave.1 C1 10000
+gui_wv_zoom_timerange -id  Wave.1 12044 14056
+gui_wv_zoom_timerange -id  Wave.1 12554 12688
+gui_marker_move -id  Wave.1 C1 12614
+gui_wv_zoom_timerange -id  Wave.1 12612 12623
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 10130 36038
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_wv_zoom_timerange -id  Wave.1 11463 15121
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 8470 32883
+gui_list_select -id Hier.1 -current_item_name DigitalLDOLogic_tb -current_item_type Scope  -selected  {  }
+gui_list_expand -id  Hier.1   DigitalLDOLogic_tb
+gui_list_expand -id  Hier.1   DigitalLDOLogic_tb.dut
+gui_list_collapse -id  Hier.1   DigitalLDOLogic_tb.dut
+gui_list_select -id Hier.1 -current_item_name DigitalLDOLogic_tb.dut -current_item_type Scope  -selected  { DigitalLDOLogic_tb.dut   }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_select -id Data.1 { DigitalLDOLogic_tb.dut.rst  DigitalLDOLogic_tb.dut.comp_in  {DigitalLDOLogic_tb.dut.out[9:0]}  {DigitalLDOLogic_tb.dut.pass[9:0]}  DigitalLDOLogic_tb.dut.n_9  DigitalLDOLogic_tb.dut.n_10  DigitalLDOLogic_tb.dut.n_11  DigitalLDOLogic_tb.dut.n_12  DigitalLDOLogic_tb.dut.n_13  DigitalLDOLogic_tb.dut.n_14  DigitalLDOLogic_tb.dut.n_15  DigitalLDOLogic_tb.dut.n_16  DigitalLDOLogic_tb.dut.n_17  DigitalLDOLogic_tb.dut.n_18  DigitalLDOLogic_tb.dut.n_19  DigitalLDOLogic_tb.dut.n_21   }
+gui_list_add -id Wave.1 -from Data.1 { DigitalLDOLogic_tb.dut.clk DigitalLDOLogic_tb.dut.rst DigitalLDOLogic_tb.dut.comp_in {DigitalLDOLogic_tb.dut.out[9:0]} {DigitalLDOLogic_tb.dut.pass[9:0]} DigitalLDOLogic_tb.dut.n_9 DigitalLDOLogic_tb.dut.n_10 DigitalLDOLogic_tb.dut.n_11 DigitalLDOLogic_tb.dut.n_12 DigitalLDOLogic_tb.dut.n_13 DigitalLDOLogic_tb.dut.n_14 DigitalLDOLogic_tb.dut.n_15 DigitalLDOLogic_tb.dut.n_16 DigitalLDOLogic_tb.dut.n_17 DigitalLDOLogic_tb.dut.n_18 DigitalLDOLogic_tb.dut.n_19 DigitalLDOLogic_tb.dut.n_21 } -insertionbar
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_select -id Wave.1 { DigitalLDOLogic_tb.dut.rst  DigitalLDOLogic_tb.dut.comp_in  {DigitalLDOLogic_tb.dut.out[9:0]}  {DigitalLDOLogic_tb.dut.pass[9:0]}  DigitalLDOLogic_tb.dut.n_9  DigitalLDOLogic_tb.dut.n_10  DigitalLDOLogic_tb.dut.n_11  DigitalLDOLogic_tb.dut.n_12  DigitalLDOLogic_tb.dut.n_13  DigitalLDOLogic_tb.dut.n_14  DigitalLDOLogic_tb.dut.n_15  DigitalLDOLogic_tb.dut.n_16  DigitalLDOLogic_tb.dut.n_17  DigitalLDOLogic_tb.dut.n_18  DigitalLDOLogic_tb.dut.n_19  DigitalLDOLogic_tb.dut.n_21   }
+gui_sg_create  Group2 
+gui_list_add_group -id  Wave.1   {Group2} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group2 {{DigitalLDOLogic_tb.dut.clk} {DigitalLDOLogic_tb.dut.rst} {DigitalLDOLogic_tb.dut.comp_in} {DigitalLDOLogic_tb.dut.out[9:0]} {DigitalLDOLogic_tb.dut.pass[9:0]} {DigitalLDOLogic_tb.dut.n_9} {DigitalLDOLogic_tb.dut.n_10} {DigitalLDOLogic_tb.dut.n_11} {DigitalLDOLogic_tb.dut.n_12} {DigitalLDOLogic_tb.dut.n_13} {DigitalLDOLogic_tb.dut.n_14} {DigitalLDOLogic_tb.dut.n_15} {DigitalLDOLogic_tb.dut.n_16} {DigitalLDOLogic_tb.dut.n_17} {DigitalLDOLogic_tb.dut.n_18} {DigitalLDOLogic_tb.dut.n_19} {DigitalLDOLogic_tb.dut.n_21}}
+gui_list_sort -id  Wave.1   {Name}
+gui_list_select -id Wave.1 -selected  { Group1   }
+gui_list_sort -id  Wave.1   -descending  {Name}
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.rst   }
+gui_marker_move -id  Wave.1 C1 10000
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}  {DigitalLDOLogic_tb.dut.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.rst   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}  {DigitalLDOLogic_tb.dut.out[9:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_19   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_21   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_9   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_10   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_11   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_12   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_13   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_14   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_15   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_16   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_17   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_18   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.comp_in   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.comp_in   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {DigitalLDOLogic_tb.dut.out[9:0]} {{DigitalLDOLogic_tb.dut.comp_in}} 
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after DigitalLDOLogic_tb.dut.comp_in {{DigitalLDOLogic_tb.dut.clk}} 
+gui_list_expand -id  Wave.1   {DigitalLDOLogic_tb.dut.pass[9:0]}
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[8]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9]}   }
+gui_list_select -id Hier.1 -current_item_name DigitalLDOLogic_tb.dut -current_item_type Scope  -selected  {  }
+gui_list_collapse -id  Wave.1   {DigitalLDOLogic_tb.dut.pass[9:0]}
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.comp_in   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group2 {{DigitalLDOLogic_tb.dut.comp_in}}
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group2 {{DigitalLDOLogic_tb.dut.clk}}
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.rst   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after DigitalLDOLogic_tb.dut.comp_in {{DigitalLDOLogic_tb.dut.rst}} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after DigitalLDOLogic_tb.dut.clk {{DigitalLDOLogic_tb.dut.rst}} 
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_wv_zoom_timerange -id  Wave.1 10483 11236
+gui_wv_zoom_timerange -id  Wave.1 10684 10729
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 10717
+gui_marker_move -id  Wave.1 C1 10710
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.rst   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.rst  {DigitalLDOLogic_tb.out[9:0]}  DigitalLDOLogic_tb.comp_in  DigitalLDOLogic_tb.clk   }
+gui_list_add  -id  Wave.1   -after Group1 {{DigitalLDOLogic_tb.rst} {DigitalLDOLogic_tb.out[9:0]} {DigitalLDOLogic_tb.comp_in} {DigitalLDOLogic_tb.clk}}
+gui_list_select -id Wave.1 -selected  { Group1   }
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.rst   }
+gui_copy_selected -id Wave.1
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { Group1   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.out[9:0]}  DigitalLDOLogic_tb.comp_in  DigitalLDOLogic_tb.clk  DigitalLDOLogic_tb.rst  {DigitalLDOLogic_tb.out[9:0]}  DigitalLDOLogic_tb.comp_in  DigitalLDOLogic_tb.clk   }
+gui_copy_selected -id Wave.1
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.clk   }
+gui_list_expand -id  Wave.1   {DigitalLDOLogic_tb.dut.out[9:0]}
+gui_list_collapse -id  Wave.1   {DigitalLDOLogic_tb.dut.out[9:0]}
+gui_list_select -id Wave.1 -selected  { DigitalLDOLogic_tb.dut.n_21   }
+gui_list_select -id Wave.1 { DigitalLDOLogic_tb.dut.n_19  DigitalLDOLogic_tb.dut.n_18  DigitalLDOLogic_tb.dut.n_17  DigitalLDOLogic_tb.dut.n_16  DigitalLDOLogic_tb.dut.n_15  DigitalLDOLogic_tb.dut.n_14  DigitalLDOLogic_tb.dut.n_13  DigitalLDOLogic_tb.dut.n_12  DigitalLDOLogic_tb.dut.n_11  DigitalLDOLogic_tb.dut.n_10  DigitalLDOLogic_tb.dut.n_9   }
+gui_copy_selected -id Wave.1
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.out[9:0]}   }
+gui_list_select -id Wave.1 -selected  { {DigitalLDOLogic_tb.dut.pass[9:0]}   }
+gui_wv_zoom_timerange -id  Wave.1 7639 24247
+gui_marker_move -id  Wave.1 C1 10000
+gui_marker_move -id  Wave.1 C1 10686
+gui_marker_move -id  Wave.1 C1 9851
+gui_marker_move -id  Wave.1 C1 10126
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 10000
+gui_list_select -id Wave.1 -selected  {  }
+gui_save_session -reload -default_file
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {false}
+gui_set_pref_value -category {Globals} -key {use_mhpi_lookup} -value {true}
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 3363 14253
+gui_marker_move -id  Wave.1 C1 5000
+gui_marker_move -id  Wave.1 C1 10000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 15000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 20000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 30000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_marker_move -id  Wave.1 C1 40000
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+#Dve crash log 
+#Encountered Illegal Interrupt SIGXFSZ on Wed Sep 4 18:58:20 2024
+#Version: P-2019.06_Full64
+#Platform: Linux x86_64
+#Data of Built: May 31 2019 21:06:56

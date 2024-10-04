@@ -1,0 +1,44 @@
+# Specify Global Variables
+
+# Specify clock signals
+vlsi.inputs.clocks: [
+  {name: "clk", period: "100ns", uncertainty: "1ns"}
+]
+
+# Synthesis Constraints
+synthesis.inputs:
+  top_module: "DigitalLDOLogic"
+  input_files: ["src/DigitalLDOLogic.v"]
+
+# Placement Constraints
+vlsi.inputs.placement_constraints:
+  - path: "DigitalLDOLogic"
+    type: "toplevel"
+    x: 0
+    y: 0
+    width: 4000
+    height: 4000
+    margins:
+      left: 10
+      right: 10
+      top: 10
+      bottom: 10
+
+# Power stuff 
+vlsi.inputs.power_spec_mode: "auto"
+vlsi.inputs.power_spec_type: "cpf"
+
+vlsi.inputs.supplies.power: [
+  {name: "vdd" , voltage: "1.8", pins: ["VPB", "VPWR", "vdd", "VDD"]}
+  ]
+vlsi.inputs.supplies.ground: [
+  {name: "vss", pins: ["VGND", "VNB", "vss","VSS"]}
+]
+
+# Pin placement constraints
+vlsi.inputs.pin_mode: generated
+vlsi.inputs.pin.generate_mode: semi_auto
+vlsi.inputs.pin.assignments: [
+  {pins: "*", layers: ["met2", "met4"], side: "bottom"}
+]
+

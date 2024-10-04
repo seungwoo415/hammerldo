@@ -1,0 +1,199 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.15-s090_1, built Tue Sep 29 11:43:45 PDT 2020
+Options: 
+Date:    Tue Sep 24 23:04:05 2024
+Host:    c111-12.EECS.Berkeley.EDU (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (24cores*32cpus*1physical cpu*13th Gen Intel(R) Core(TM) i9-13900 36864KB) (65298564KB)
+PID:     1299619
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (7 seconds elapsed).
+
+WARNING: This version of the tool is 1456 days old.
+@genus:root: 1> -files script.tcl
+invalid command name "-files"
+@genus:root: 2> tcl script.tcl
+ambiguous command name "tcl": tclLog tclPkgSetup tclPkgUnknown tcl_findLibrary
+@genus:root: 3> -tch script.tcl
+invalid command name "-tch"
+@genus:root: 4> -tcl script.tcl
+invalid command name "-tcl"
+@genus:root: 5> puts -tcl script.tcl
+can not find channel named "-tcl"
+@genus:root: 6> puts -h
+-h
+@genus:root: 7> puts
+wrong # args: should be "puts ?-nonewline? ?channelId? string"
+@genus:root: 8> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+dl.cpf
+genus.cmd
+genus.cmd1
+genus.log
+genus.log1
+input.txt
+output
+post-par-sim
+post-syn
+script.tcl
+@genus:root: 9> vim script.tcl
+@genus:root: 10> vim script.tcl
+@genus:root: 11> tclsh script.tcl
+@genus:root: 12> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+dl.cpf
+genus.cmd
+genus.cmd1
+genus.log
+genus.log1
+input.txt
+output
+post-par-sim
+post-syn
+script.tcl
+@genus:root: 13> tclsh script.tcl
+@genus:root: 14> source script.tcl
+Sourcing './script.tcl' (Tue Sep 24 23:57:03 PDT 2024)...
+#@ Begin verbose source script.tcl
+@file(script.tcl) 1: puts "elaborate DigitalLDOLogic"
+elaborate DigitalLDOLogic
+@file(script.tcl) 2: elaborate DigitalLDOLogic
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+#@ End verbose source script.tcl
+1
+@genus:root: 15> vim script.tcl
+@genus:root: 16> elaborate DigitalLDOLogic
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+@genus:root: 17> genus elaborate DigitalLDOLogic
+@genus:root: 18> tclsh script.tcl
+@genus:root: 19> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+dl.cpf
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.log
+genus.log1
+genus.log2
+input.txt
+output
+post-par-sim
+post-syn
+script.tcl
+@genus:root: 20> elaborate DigitalLDOLogic.v
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+@genus:root: 21> elaborate DigitalLDOLogic
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+@genus:root: 22> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+dl.cpf
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.log
+genus.log1
+genus.log2
+input.txt
+output
+post-par-sim
+post-syn
+script.tcl
+@genus:root: 23> vim script.tcl
+@genus:root: 24> tclsh script.tcl
+@genus:root: 25> genus elaborate
+@genus:root: 26> elaborate
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+@genus:root: 27> elaborate -h
+  elaborate: elaborates previously read HDL files and creates corresponding design and subdesigns 
+
+Usage: elaborate [-parameters <string>] [-lib_path <string>]+ [-lib_extension <string>]+ [<string>+]
+
+    [-parameters <string>]:
+        specifies a list of parameter/value pairs for top-level Verilog module or VHDL entity. For example, elab -parameters {{width 
+        5} {depth 10}} 
+    [-lib_path <string>]:
+        defines Verilog library search path 
+    [-lib_extension <string>]:
+        defines Verilog library file extension 
+    [<string>+]:
+        the top-level Verilog modules or VHDL architectures to elaborate 
+@genus:root: 28> elaborate DigitalLDOLogic
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+@genus:root: 29> elaborate DigitalLDOLogic.v
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 4802s, ST: 56s, FG: 56s, CPU: 3.1%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.4G, phys peak: 0.7G}, SYS {load: 0.4, cpu: 32, total: 62.3G, free: 56.6G}
+@genus:root: 30> elab
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+1
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 4803s, ST: 56s, FG: 56s, CPU: 3.1%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.4G, phys peak: 0.7G}, SYS {load: 0.4, cpu: 32, total: 62.3G, free: 56.6G}
+@genus:root: 31> 
+@genus:root: 31> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+dl.cpf
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.cmd3
+genus.log
+genus.log1
+genus.log2
+genus.log3
+input.txt
+output
+post-par-sim
+post-syn
+script.tcl
+@genus:root: 32> vim script.tcl
+@genus:root: 33> vim dl.cpf

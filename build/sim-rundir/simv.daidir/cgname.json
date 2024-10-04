@@ -1,0 +1,110 @@
+{
+    "SdfDummyMod": [
+        "SdfDummyMod",
+        "hsqE0",
+        "module",
+        1
+    ],
+    "sky130_fd_sc_hd__inv": [
+        "sky130_fd_sc_hd__inv",
+        "vk6Yu",
+        "module",
+        13
+    ],
+    "sky130_fd_sc_hd__a21o_1": [
+        "sky130_fd_sc_hd__a21o_1",
+        "JqwPS",
+        "module",
+        6
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "sky130_fd_sc_hd__dfxtp_1": [
+        "sky130_fd_sc_hd__dfxtp_1",
+        "ushg8",
+        "module",
+        12
+    ],
+    "sky130_fd_sc_hd__or3": [
+        "sky130_fd_sc_hd__or3",
+        "KHhm8",
+        "module",
+        15
+    ],
+    "DigitalLDOLogic_tb": [
+        "DigitalLDOLogic_tb",
+        "mMgwG",
+        "module",
+        3
+    ],
+    "DigitalLDOLogic": [
+        "DigitalLDOLogic",
+        "JUec2",
+        "module",
+        4
+    ],
+    "sky130_fd_sc_hd__buf_8": [
+        "sky130_fd_sc_hd__buf_8",
+        "mFYK2",
+        "module",
+        10
+    ],
+    "sky130_fd_sc_hd__inv_1": [
+        "sky130_fd_sc_hd__inv_1",
+        "MHV94",
+        "module",
+        14
+    ],
+    "sky130_fd_sc_hd__a21o": [
+        "sky130_fd_sc_hd__a21o",
+        "QBKah",
+        "module",
+        5
+    ],
+    "sky130_fd_sc_hd__a221o": [
+        "sky130_fd_sc_hd__a221o",
+        "DuyG7",
+        "module",
+        7
+    ],
+    "sky130_fd_sc_hd__a221o_1": [
+        "sky130_fd_sc_hd__a221o_1",
+        "UsrLG",
+        "module",
+        8
+    ],
+    "sky130_fd_sc_hd__buf": [
+        "sky130_fd_sc_hd__buf",
+        "ImTT5",
+        "module",
+        9
+    ],
+    "sky130_fd_sc_hd__dfxtp": [
+        "sky130_fd_sc_hd__dfxtp",
+        "T0ma9",
+        "module",
+        11
+    ],
+    "sky130_fd_sc_hd__or3_1": [
+        "sky130_fd_sc_hd__or3_1",
+        "hZ4zG",
+        "module",
+        16
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        17
+    ],
+    "sky130_fd_sc_hd__udp_dff$P_pp$PG$N": [
+        "sky130_fd_sc_hd__udp_dff0x24P_pp0x24PG0x24N",
+        "fTB9z",
+        "udp",
+        18
+    ]
+}

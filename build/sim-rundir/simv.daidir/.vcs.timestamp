@@ -1,0 +1,168 @@
+1        
+0 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf_c
+55
++cli+4
++define+CLOCK_PERIOD=100.00
++define+UNIT_DELAY=#1
++itf+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcsdp_lite.tab
++lint=all
++memcbk
++neg_tchk
++sdf=max:DigitalLDOLogic:/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf
++sdf=max:DigitalLDOLogic:/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf
++sdfverbose
++v2k
++vcsd1
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -I$(VCS_HOME)/include -O -I/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvirsim.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/liberrorinf.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvfs.so
+-Mout=/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv
+-Msaverestoreobj=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/include
+-P
+-Xcbug=0x1
+-Xnotice=1
+-debug=4
+-debug_access+all
+-full64
+-gen_obj
+-lca
+-line
+-negdelay
+-o /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-top
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/access.tab
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/bin/vcs1
+DigitalLDOLogic_tb
+90
+which_declare=declare -f
+XSESSION_EXEC=mate-session
+XDG_SESSION_ID=81
+XDG_RUNTIME_DIR=/run/user/120333
+XDG_DATA_DIRS=/home/aa/users/cs199-apt/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=MATE
+XAUTHORITY=/home/aa/users/cs199-apt/.Xauthority
+X2GO_SESSION=cs199-apt-51-1727726903_stDGNOME_dp32
+X2GO_AGENT_PID=560503
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VIRTUAL_ENV_PROMPT=(venv_151) 
+VIRTUAL_ENV=/home/aa/users/cs199-apt/venv_151
+VERDI_HOME=/home/ff/eecs151/hammer-tools/synopsys/verdi/P-2019.06
+VCS_PATH=/share/instsww/synopsys-new/vcs/P-2019.06/bin
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64
+S_COLORS=auto
+SYNOPSYS_ROOT=/share/instsww/synopsys-new
+STARTUP=/usr/bin/env LD_LIBRARY_PATH= mate-session
+SSH_CONNECTION=136.152.29.227 50385 128.32.40.238 22
+SSH_CLIENT=136.152.29.227 50385 22
+SSH_AUTH_SOCK=/run/user/120333/keyring/ssh
+SSH_AGENT_PID=561148
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/561023,unix/unix:/tmp/.ICE-unix/561023
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNAS=/share/b/runas/x86_64
+QT_SCALE_FACTOR=1
+QT_GRAPHICSSYSTEM=native
+QT_FONT_DPI=72
+PULSE_CLIENTCONFIG=/home/aa/users/cs199-apt/.x2go/C-cs199-apt-51-1727726903_stDGNOME_dp32/.pulse-client.conf
+PEGASUS_LVS=/home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/Sky130_LVS
+PEGASUS_DRC=/home/ff/eecs251b/sky130/sky130_cds/sky130_release_0.0.1/Sky130_DRC
+PDK_DIR=/home/ff/eecs251b/asap7/asap7PDK_r1p7
+OVA_UUM=0
+OS=Linux
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MGLS_LICENSE_FILE=1717@bwrcflex-1.eecs.berkeley.edu:1717@bwrcflex-2.eecs.berkeley.edu
+MGC_HOME=/share/instsww/mgc/CALIBRE
+MFLAGS=
+MATE_DESKTOP_SESSION_ID=this-is-deprecated
+MAKE_TERMOUT=/dev/pts/4
+MAKE_TERMERR=/dev/pts/4
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LM_PROJECT=eecs251b
+LIBGL_ALWAYS_SOFTWARE=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+JLSHOME=/share/instsww/cadence/JLS191
+HSPICE_HOME=/home/ff/ee241/tools/hspice/G-2012.06-SP1
+HISTCONTROL=ignoredups
+HAMMER_DATABASE=/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/config_db_tmp.json
+GTK_OVERLAY_SCROLLING=0
+ENABLE_SBT_THIN_CLIENT=1
+EECS251B_HOME=/home/ff/eecs251b
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-AA3uBErOeu,guid=17d47c17b78aee91eeb487ee66fb053f
+CVS_RSH=ssh
+COLORTERM=truecolor
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=5280@license-srv.eecs.berkeley.edu
+CDS_HOME=/share/instsww/cadence
+CDS_AUTO_64BIT=ALL
+CALIBRE_HOME=/share/instsww/mgc/CALIBRE
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+ARCH=x86_64
+ALTOSHOME=/share/instsww/cadence/LIBERATE
+AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+0
+10
+1725695947 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf
+1693359834 /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v
+1693359834 /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v
+1727757928 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v
+1727757928 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v
+1725695947 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v
+1725477422 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v
+1725695947 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v
+1727757929 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/access.tab
+1559359020 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcsdp_lite.tab
+4
+1559360489 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvirsim.so
+1559360051 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/liberrorinf.so
+1559360008 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
+1559360050 /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/libvfs.so
+1727757932 /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv.daidir
+-1 partitionlib

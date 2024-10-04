@@ -1,0 +1,11 @@
+The file 'vcdplus.vpd' was opened successfully.
+Warning: [AD-SDF] Sdf detected
+  The design has '$sdf_annotate', only partial active driver analysis will be 
+  done. 
+  Some drivers will not be analyzed completely and will be marked as possibly 
+  active.
+ibraries/syn/generic.sdb'
+10 drivers (10 possibly active statements) found for signal: DigitalLDOLogic_tb.out[9:0]
+The file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/vcdplus.vpd' was opened successfully.
+The file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/vcdplus.vpd' was opened successfully.
+The file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/vcdplus.vpd' was opened successfully.

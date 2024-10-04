@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+#
+# NOTE: this ExampleDriver works for asap7 and nangate45. the custom hooks are
+# only used for asap7 though.
+
+import os
+
+import hammer.vlsi as hammer_vlsi
+
+from hammer.vlsi import CLIDriver, HammerTool, HammerToolHookAction, HammerDriver, HierarchicalMode
+
+from typing import Dict, Callable, Optional, List
+
+
+
+def write_hdl_with_pg_pins(x: hammer_vlsi.HammerTool) -> bool:
+    x.append(f"write_hdl -pg DigitalLDOLogic > dllogic.v")
+    return True
+
+
+class DigitalLDODriver(CLIDriver): 
+
+    def get_extra_hierarchical_synthesis_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
+        hooks = dict({
+            "DigitalLDOLogic": [
+                HammerTool.make_post_insertion_hook("write_outputs", write_hdl_with_pg_pins),
+            ],
+        })
+        return hooks
+
+if __name__ == '__main__':
+     DigitalLDODriver().main() 

@@ -1,0 +1,114 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.15-s090_1, built Tue Sep 29 11:43:45 PDT 2020
+Options: 
+Date:    Tue Sep 24 02:55:55 2024
+Host:    c111-12.EECS.Berkeley.EDU (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (24cores*32cpus*1physical cpu*13th Gen Intel(R) Core(TM) i9-13900 36864KB) (65298564KB)
+PID:     610358
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (4 seconds elapsed).
+
+WARNING: This version of the tool is 1455 days old.
+@genus:root: 1> write_hdl -pg DigitalLDOLogic.v > pg_netlist.v
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'design|module' named 'DigitalLDOLogic.v' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  write_netlist: writes out a design or a subdesign in Verilog. It can automatically read in or write out a gzip 
+                 compressed Verilog file. 
+
+Usage: write_netlist [-generic] [-suffix <string>] [-abstract] [-depth <integer>] [-equation] [-lec] [-pg] [-exclude_ilm]
+           [-language <string>] [-use_eeq_cell_with_liberty_info] [<design|module>] [> file]
+
+    [-generic]:
+        writes generic (structural) logic 
+    [-suffix <string>]:
+        specifies the string to be appended to the name of all defined modules 
+    [-abstract]:
+        writes an empty top-level Verilog module with port declarations 
+    [-depth <integer>]:
+        specifies the maximum instantiation depth of hierarchies to write out (should be >= 0) 
+    [-equation]:
+        writes out a logic equation in an assign statement for each Verilog primitive gate 
+    [-lec]:
+        write out an intermediate netlist for LEC verification 
+    [-pg]:
+        writes out pg netlist 
+    [-exclude_ilm]:
+        skips writing out Verilog for ILM modules 
+    [-language <string>]:
+        specifies the language of output Verilog file, v2001/v1995 
+    [-use_eeq_cell_with_liberty_info]:
+        specifies if Verilog Writer should write the eeq master equivalent 
+    [<design|module>]:
+        the name of the design or subdesign to write out 
+Failed on write_netlist
+@genus:root: 2> write_hdl -pg DigitalLDOLogic > pg_netlist.v
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'design|module' named 'DigitalLDOLogic' could not be found.
+  write_netlist: writes out a design or a subdesign in Verilog. It can automatically read in or write out a gzip 
+                 compressed Verilog file. 
+
+Usage: write_netlist [-generic] [-suffix <string>] [-abstract] [-depth <integer>] [-equation] [-lec] [-pg] [-exclude_ilm]
+           [-language <string>] [-use_eeq_cell_with_liberty_info] [<design|module>] [> file]
+
+    [-generic]:
+        writes generic (structural) logic 
+    [-suffix <string>]:
+        specifies the string to be appended to the name of all defined modules 
+    [-abstract]:
+        writes an empty top-level Verilog module with port declarations 
+    [-depth <integer>]:
+        specifies the maximum instantiation depth of hierarchies to write out (should be >= 0) 
+    [-equation]:
+        writes out a logic equation in an assign statement for each Verilog primitive gate 
+    [-lec]:
+        write out an intermediate netlist for LEC verification 
+    [-pg]:
+        writes out pg netlist 
+    [-exclude_ilm]:
+        skips writing out Verilog for ILM modules 
+    [-language <string>]:
+        specifies the language of output Verilog file, v2001/v1995 
+    [-use_eeq_cell_with_liberty_info]:
+        specifies if Verilog Writer should write the eeq master equivalent 
+    [<design|module>]:
+        the name of the design or subdesign to write out 
+Failed on write_netlist
+@genus:root: 3> ls
+DigitalLDOLogic.v
+DigitalLDOLogic_tb.v
+data_b.txt
+genus.cmd
+genus.log
+input.txt
+output
+pg_netlist.v
+post-par-sim
+post-syn
+@genus:root: 4> cd ..
+@genus:root: 5> ls
+Makefile
+build
+design.yml
+hammer-vlsi-20240907-005821.log
+hammer-vlsi-20240907-005849.log
+hammer-vlsi-20240907-010011.log
+hammer-vlsi-20240907-010012.log
+inst-env.yml
+output
+output.json
+sim-gl-par.yml
+sim-gl-syn.yml
+sim-rtl.yml
+sky130.yml
+src
+@genus:root: 6> exit
+Normal exit.

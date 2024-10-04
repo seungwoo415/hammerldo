@@ -1,0 +1,10 @@
+force -deposit {dut.\pass_reg[8] .Q} 0
+force -deposit {dut.\pass_reg[3] .Q} 0
+force -deposit {dut.\pass_reg[4] .Q} 0
+force -deposit {dut.\pass_reg[5] .Q} 0
+force -deposit {dut.\pass_reg[6] .Q} 0
+force -deposit {dut.\pass_reg[1] .Q} 0
+force -deposit {dut.\pass_reg[2] .Q} 0
+force -deposit {dut.\pass_reg[7] .Q} 0
+force -deposit {dut.\pass_reg[9] .Q} 0
+force -deposit {dut.\pass_reg[0] .Q} 0

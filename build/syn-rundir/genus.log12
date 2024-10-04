@@ -1,0 +1,31 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:08:24.318857] Configured Lic search path (21.01-s002): 5280@license-srv.eecs.berkeley.edu
+
+Version: 22.11-s104_1, built Tue Jan 31 10:18:59 PST 2023
+Options: -files /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/syn.tcl -no_gui 
+Date:    Wed Sep 04 12:08:24 2024
+Host:    c111-12.EECS.Berkeley.EDU (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (24cores*32cpus*1physical cpu*13th Gen Intel(R) Core(TM) i9-13900 36864KB) (65298568KB)
+PID:     1851035
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+[12:08:24.453417] Periodic Lic check successful
+[12:08:24.453426] Feature usage summary:
+[12:08:24.453426] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 4s, ST: 3s, FG: 3s, CPU: 100.0%}, MEM {curr: 0.7G, peak: 0.7G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 0.2, cpu: 32, total: 62.3G, free: 6.0G}

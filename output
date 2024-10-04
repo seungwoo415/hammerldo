@@ -1,0 +1,1667 @@
+hammer-vlsi -e /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/inst-env.yml -p /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/sky130.yml -p /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/sim-gl-syn.yml -p /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-to-sim_input.json --obj_dir /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build sim
+[96m[<global>] Loading hammer-vlsi libraries and reading settings[0m
+[96m[<global>] Loading technology 'hammer.technology.sky130'[0m
+[33m[<global>] Key technology.sky130.sky130_nda has a type str is not yet implemented[0m
+[33m[<global>] Key technology.sky130.openram_lib has a type str is not yet implemented[0m
+[33m[<global>] Key technology.sky130.dffram_lib has a type Optional[str] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.pdk_home has a type Optional[str] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.lvs_deck_sources has a type Optional[list[str]] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.io_file has a type str is not yet implemented[0m
+[91m[tech] The install path: /path/to/skywater-src-nda does not exist, looked at key technology.sky130.sky130_nda[0m
+[33m[<global>] Key technology.sky130.sram22_sky130_macros is not associated with a type[0m
+[96m[tech] Modifying CDL netlist: /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.cdl[0m
+[96m[tech] Modifying Verilog netlist: /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v[0m
+[96m[tech] Modifying Verilog netlist: /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v[0m
+[96m[tech] Modifying Technology LEF: /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef[0m
+[96m[tech] Modifying IO LEF: /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef -> /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_ef_io.lef[0m
+Loaded Sky130 Tech
+[96m[<global>] Starting simulation with tool 'vcs'[0m
+[37m[sim] Running sub-step 'write_gl_files'[0m
+[37m[sim] Running sub-step 'run_vcs'[0m
+[33m[<global>] Key sim.vcs.vcs_bin is not associated with a type[0m
+[33m[<global>] Key sim.vcs.fgp is not associated with a type[0m
+Key sim.vcs.vcs_home is not associated with a type
+Key sim.vcs.verdi_home is not associated with a type
+Executing subprocess: /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/bin/vcs -full64 -lca -debug_access+all -timescale=1ns/1ps -CC -I$(VCS_HOME)/include -notice -line +lint=all +v2k -debug -sverilog /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v /home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v +define+CLOCK_PERIOD=100.00 +define+UNIT_DELAY=#1 -P /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/access.tab +neg_tchk +sdfverbose -negdelay -sdf max:DigitalLDOLogic:/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf -top DigitalLDOLogic_tb -o /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Red Hat Enterprise Linux release 8.10 (Ootpa)' is not
+  supported on 'x86_64' officially, assuming linux compatibility by default.
+  Set VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '4.18.0-553.16.1.el8_10.x86_64' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+
+Warning-[DBGACC_DBG] Multiple debug options being used
+  The debug switches '-debug_access' and '-debug*' are being used together.
+  For better performance, consider using only '-debug_access'.
+
+
+Error-[VERDI_VCS_MM] Possible VERDI_HOME and VCS_HOME mismatch
+  The Verdi tab and pli.a cannot be added to the 'vcs' compile command because
+  the file '/pli.a' could not be found.
+  Please check to make sure VERDI_HOME and VCS_HOME point to installations
+  that are either both 32-bits or both 64-bits.
+
+                         Chronologic VCS (TM)
+         Version P-2019.06_Full64 -- Mon Sep 30 13:18:07 2024
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more
+  information regarding list of LCA features please refer to Chapter "LCA
+  features" in the VCS Release Notes
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option 'debug=4' will be deprecated in a future release.  Please use
+  '-debug_acc+pp+f+fn+dmptf -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v'
+Parsing design file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v'
+
+Lint-[NS] Null statement
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 44
+  Null statement is used in following verilog source.
+  Source info:         #10;
+
+Parsing design file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v'
+
+Warning-[OPD] Override previous declaration
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v, 7
+  Previously declared
+  at:"/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v",
+  7
+  This module will be overridden by the last declaration.
+
+
+Parsing design file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v'
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 412
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  410
+  0    ?    r    0    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  412
+  0    ?    p    0    : 0: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 413
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  411
+  ?    0    r    1    : ?: 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  413
+  ?    0    p    1    : 1: 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 497
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  495
+  0    ?    r    0    ?    1    0    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  497
+  0    ?    p    0    ?    1    0    : 0: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 498
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  496
+  ?    0    r    1    ?    1    0    : ?: 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  498
+  ?    0    p    1    ?    1    0    : 1: 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 721
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  716
+  ?    ?    1    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  721
+  0    x    ?    : 0: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 799
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  794
+  ?    ?    1    ?    1    0    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  799
+  0    x    ?    ?    1    0    : 0: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 876
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  870
+  ?    ?    1    : ?: 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  876
+  1    x    ?    : 1: 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 954
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  948
+  ?    ?    1    ?    1    0    : ?: 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  954
+  1    x    ?    ?    1    0    : 1: 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1320
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1317
+  0    1    0    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1320
+  0    1    ?    : ?: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1320
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1319
+  ?    ?    1    : ?: 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1320
+  0    1    ?    : ?: 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1480
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1478
+  0    0    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1480
+  0    ?    0    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1481
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1479
+  1    1    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1481
+  1    ?    0    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1482
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1478
+  0    0    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1482
+  ?    0    1    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1483
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1479
+  1    1    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1483
+  ?    1    1    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1546
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1542
+  0    ?    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1546
+  0    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1546
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1544
+  ?    0    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1546
+  0    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1547
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1543
+  1    ?    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1547
+  1    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1547
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1545
+  ?    1    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1547
+  1    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1620
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1612
+  0    ?    ?    ?    0    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1620
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1614
+  ?    0    ?    ?    1    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1620
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1616
+  ?    ?    0    ?    0    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1620
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1618
+  ?    ?    ?    0    1    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1621
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1613
+  1    ?    ?    ?    0    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1621
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1615
+  ?    1    ?    ?    1    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1621
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1617
+  ?    ?    1    ?    0    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1621
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1619
+  ?    ?    ?    1    1    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1622
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1612
+  0    ?    ?    ?    0    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1622
+  0    0    ?    ?    ?    0    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1622
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1614
+  ?    0    ?    ?    1    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1622
+  0    0    ?    ?    ?    0    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1622
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1622
+  0    0    ?    ?    ?    0    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1623
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1613
+  1    ?    ?    ?    0    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1623
+  1    1    ?    ?    ?    0    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1623
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1615
+  ?    1    ?    ?    1    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1623
+  1    1    ?    ?    ?    0    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1623
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1623
+  1    1    ?    ?    ?    0    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1624
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1616
+  ?    ?    0    ?    0    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1624
+  ?    ?    0    0    ?    1    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1624
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1618
+  ?    ?    ?    0    1    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1624
+  ?    ?    0    0    ?    1    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1624
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1624
+  ?    ?    0    0    ?    1    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1625
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1617
+  ?    ?    1    ?    0    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1625
+  ?    ?    1    1    ?    1    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1625
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1619
+  ?    ?    ?    1    1    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1625
+  ?    ?    1    1    ?    1    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1625
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1625
+  ?    ?    1    1    ?    1    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1626
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1612
+  0    ?    ?    ?    0    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1626
+  0    ?    0    ?    0    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1626
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1616
+  ?    ?    0    ?    0    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1626
+  0    ?    0    ?    0    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1626
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1626
+  0    ?    0    ?    0    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1626
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1622
+  0    0    ?    ?    ?    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1626
+  0    ?    0    ?    0    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1626
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1624
+  ?    ?    0    0    ?    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1626
+  0    ?    0    ?    0    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1627
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1613
+  1    ?    ?    ?    0    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1627
+  1    ?    1    ?    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1627
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1617
+  ?    ?    1    ?    0    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1627
+  1    ?    1    ?    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1627
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1627
+  1    ?    1    ?    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1627
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1623
+  1    1    ?    ?    ?    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1627
+  1    ?    1    ?    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1627
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1625
+  ?    ?    1    1    ?    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1627
+  1    ?    1    ?    0    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1628
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1614
+  ?    0    ?    ?    1    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1628
+  ?    0    ?    0    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1628
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1618
+  ?    ?    ?    0    1    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1628
+  ?    0    ?    0    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1628
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1620
+  0    0    0    0    ?    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1628
+  ?    0    ?    0    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1628
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1622
+  0    0    ?    ?    ?    0    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1628
+  ?    0    ?    0    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1628
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1624
+  ?    ?    0    0    ?    1    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1628
+  ?    0    ?    0    1    ?    : 0;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1629
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1615
+  ?    1    ?    ?    1    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1629
+  ?    1    ?    1    1    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1629
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1619
+  ?    ?    ?    1    1    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1629
+  ?    1    ?    1    1    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1629
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1621
+  1    1    1    1    ?    ?    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1629
+  ?    1    ?    1    1    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1629
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1623
+  1    1    ?    ?    ?    0    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1629
+  ?    1    ?    1    1    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1629
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1625
+  ?    ?    1    1    ?    1    : 1;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1629
+  ?    1    ?    1    1    ?    : 1;
+
+
+Lint-[OUDPE] UDP Entries Overlap
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v, 1829
+  Following UDP entries overlap each other as possibly they could have exactly
+  same set of input and output values.
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1822
+  0    1    0    ?    : 0;
+  "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/primitives.v",
+  1829
+  ?    ?    0    1    : 0;
+
+Parsing design file '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v'
+Parsing design file '/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v'
+Parsing design file '/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v'
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2818
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2819
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2820
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2821
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2822
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 2823
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NS] Null statement
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 3158
+  Null statement is used in following verilog source.
+  Source info:     #1;
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5912
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5913
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5914
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5915
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5916
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 5917
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NS] Null statement
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 6210
+  Null statement is used in following verilog source.
+  Source info:     #1;
+
+
+Lint-[NS] Null statement
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 8009
+  Null statement is used in following verilog source.
+  Source info:     #1;
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9704
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9705
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9706
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9707
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9708
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NCEID] Non-Constant Expression In Delay
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9709
+  Following delay expression must be a constant.
+  Source info: slow_delay
+
+
+Lint-[NS] Null statement
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 9846
+  Null statement is used in following verilog source.
+  Source info:     #1;
+
+
+Lint-[NS] Null statement
+/home/ff/eecs151/fa23/pdk_mod/sky130/pdk/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v, 12065
+  Null statement is used in following verilog source.
+  Source info:     #1;
+
+Top Level Modules:
+       DigitalLDOLogic_tb
+
+Warning-[AOUP] Attempt to override undefined parameter
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 11
+  Attempting to override undefined parameter "PASS_NUM", will ignore it.
+
+TimeScale is 1 ns / 1 ps
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 6
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: clk = 1;
+  Expression: clk
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 24
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 0;
+  Expression: rst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 25
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 28
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 1;
+  Expression: rst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 29
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: rst = 0;
+  Expression: rst
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 32
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 0;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 33
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 34
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 0;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 35
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 36
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 0;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 37
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 38
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 39
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 0;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 40
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 0;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 41
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v, 42
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: comp_in = 1;
+  Expression: comp_in
+
+
+Lint-[VNGS] Variable never gets set
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v, 33219
+  Following variable has never been set any value.
+  Source info: VPWR
+
+
+Lint-[VNGS] Variable never gets set
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v, 33220
+  Following variable has never been set any value.
+  Source info: VGND
+
+
+Lint-[VNGS] Variable never gets set
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/tech-sky130-cache/sky130_fd_sc_hd.v, 33357
+  Following variable has never been set any value.
+  Source info: awake
+
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfbbn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfbbn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfbbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrtn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfrtp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfsbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfsbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfstp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfstp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfstp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfxbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfxbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfxtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dfxtp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlclkp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlclkp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlclkp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrbn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrbn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtn_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlrtp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxbn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxbn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxtn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxtn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxtn_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__dlxtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__edfxbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__edfxtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__lpflow_inputisolatch_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfbbn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfbbn_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfbbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrtn_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfrtp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfsbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfsbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfstp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfstp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfstp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfxbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfxbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfxtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfxtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdfxtp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdlclkp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdlclkp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sdlclkp_4
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sedfxbp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sedfxbp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sedfxtp_1
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sedfxtp_2
+Acc Capabilities specified for non-existent module sky130_fd_sc_hd__sedfxtp_4
+Acc Capabilities specified for non-existent module sram22_1024x32m8w8
+Acc Capabilities specified for non-existent module sram22_64x32m4w32
+Acc Capabilities specified for non-existent module sram22_1024x32m8w32
+Acc Capabilities specified for non-existent module sram22_512x32m4w32
+Acc Capabilities specified for non-existent module sram22_2048x32m8w8
+Acc Capabilities specified for non-existent module sram22_512x32m4w8
+Acc Capabilities specified for non-existent module sram22_4096x32m8w8
+Acc Capabilities specified for non-existent module sram22_64x4m4w2
+Acc Capabilities specified for non-existent module sram22_256x32m4w8
+Acc Capabilities specified for non-existent module sram22_4096x8m8w8
+Acc Capabilities specified for non-existent module sram22_64x32m4w8
+Acc Capabilities specified for non-existent module sram22_64x24m4w24
+Acc Capabilities specified for non-existent module sram22_512x64m4w8
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf"
+   ***    Annotation scope: DigitalLDOLogic_tb.dut
+   ***    MTM selection: "MAXIMUM"
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Mon Sep 30 13:18:08 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 38
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g151__2398"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 39
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g151__2398"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 40
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g151__2398"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 41
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g151__2398"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 42
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g151__2398"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 171
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g160__5107"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 172
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g160__5107"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 173
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g160__5107"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 174
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g160__5107"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 175
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g160__5107"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 189
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g166__6260"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 190
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g166__6260"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 191
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g166__6260"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 192
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g166__6260"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 193
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g166__6260"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 207
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g165__4319"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 208
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g165__4319"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 209
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g165__4319"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 210
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g165__4319"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 211
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g165__4319"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 225
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g167__8428"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 226
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g167__8428"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 227
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g167__8428"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 228
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g167__8428"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 229
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g167__8428"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 243
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g161__5526"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 244
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g161__5526"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 245
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g161__5526"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 246
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g161__5526"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 247
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g161__5526"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 261
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g168__6783"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 262
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g168__6783"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 263
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g168__6783"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 264
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g168__6783"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 265
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g168__6783"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 279
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g164__3680"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 280
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g164__3680"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 281
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g164__3680"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 282
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g164__3680"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 283
+module: sky130_fd_sc_hd__a221o_1, "instance: DigitalLDOLogic_tb.dut.g164__3680"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 339
+module: sky130_fd_sc_hd__or3_1, "instance: DigitalLDOLogic_tb.dut.g170__2802"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 340
+module: sky130_fd_sc_hd__or3_1, "instance: DigitalLDOLogic_tb.dut.g170__2802"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+Warning-[SDFCOM_IANE] IOPATH Annotation Not Enabled
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf, 341
+module: sky130_fd_sc_hd__or3_1, "instance: DigitalLDOLogic_tb.dut.g170__2802"
+  SDF Warning: Cannot find matching IOPATH in the corresponding instance and
+  module.
+  Please make sure that specify block exists and IOPATH annotation is not
+  disabled in configuration file.
+
+
+          Total errors: 0
+          Total warnings: 43
+   ***    SDF annotation completed: Mon Sep 30 13:18:08 2024
+
+
+Starting vcs inline pass...
+15 modules and 1 UDP read.
+Generating code for _VCSgd_hsqE0
+recompiling module SdfDummyMod
+Generating code for _VCSgd_reYIK
+Generating code for _VCSgd_mMgwG
+recompiling module DigitalLDOLogic_tb
+Generating code for _VCSgd_JUec2
+recompiling module DigitalLDOLogic
+Generating code for _VCSgd_QBKah
+recompiling module sky130_fd_sc_hd__a21o
+Generating code for _VCSgd_JqwPS
+recompiling module sky130_fd_sc_hd__a21o_1
+Generating code for _VCSgd_DuyG7
+recompiling module sky130_fd_sc_hd__a221o
+Generating code for _VCSgd_UsrLG
+recompiling module sky130_fd_sc_hd__a221o_1
+Generating code for _VCSgd_ImTT5
+recompiling module sky130_fd_sc_hd__buf
+Generating code for _VCSgd_mFYK2
+recompiling module sky130_fd_sc_hd__buf_8
+Generating code for _VCSgd_T0ma9
+recompiling module sky130_fd_sc_hd__dfxtp
+Generating code for _VCSgd_ushg8
+recompiling module sky130_fd_sc_hd__dfxtp_1
+Generating code for _VCSgd_vk6Yu
+recompiling module sky130_fd_sc_hd__inv
+Generating code for _VCSgd_MHV94
+recompiling module sky130_fd_sc_hd__inv_1
+Generating code for _VCSgd_KHhm8
+recompiling module sky130_fd_sc_hd__or3
+Generating code for _VCSgd_hZ4zG
+recompiling module sky130_fd_sc_hd__or3_1
+All of 15 modules done
+/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/bin/vcs: line 30656: 575293 Segmentation fault      (core dumped) ${TOOL_HOME}/bin/cfs_ident_exec -f ${XML_INPUT_EXE} -o "${fsearchDir}/idents_tapi.xml" -o_SrcFile "${dirSrcFiles}/src_files_c" ${all_dyn_libs} > tapi_xml_writer.log
+make[1]: Entering directory '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv ]; then chmod -x /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv; fi
+g++  -o /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib -L/home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _575138_archive_1.so objs/udps/fTB9z.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive          /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl
+/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv up to date
+make[1]: Leaving directory '/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/csrc'
+CPU time: .380 seconds to compile + .151 seconds to elab + .363 seconds to link
+[37m[sim] Running sub-step 'run_simulation'[0m
+[33m[<global>] Key sim.vcs.vcs_bin is not associated with a type[0m
+[33m[<global>] Key sim.vcs.fgp is not associated with a type[0m
+Key sim.vcs.vcs_home is not associated with a type
+Key sim.vcs.verdi_home is not associated with a type
+Executing subprocess: /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/simv -ucli -do /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/run.tcl
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06_Full64; Runtime version P-2019.06_Full64;  Sep 30 13:18 2024
+Doing SDF annotation ...... Done
+ucli% # ---------------------------------------------------------------------------------
+ucli% # Portions Copyright ©2024 Synopsys, Inc. All rights reserved. Portions of
+ucli% # these TCL scripts are proprietary to and owned by Synopsys, Inc. and may only be
+ucli% # used for internal use by educational institutions (including United States
+ucli% # government labs, research institutes and federally funded research and
+ucli% # development centers) on Synopsys tools for non-profit research, development,
+ucli% # instruction, and other non-commercial uses or as otherwise specifically set forth
+ucli% # by written agreement with Synopsys. All other use, reproduction, modification, or
+ucli% # distribution of these TCL scripts is strictly prohibited.
+ucli% # ---------------------------------------------------------------------------------
+ucli% source /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/sim-rundir/force_regs.ucli
+ucli% run
+VCD+ Writer P-2019.06_Full64 Copyright (c) 1991-2019 by Synopsys Inc.
+Time: 0 | Clock: 1 | Value: xxxxxxxxxx | Comp_in: 1
+Time: 10000 | Clock: 1 | Value: 0000000000 | Comp_in: 1
+Time: 20000 | Clock: 1 | Value: 1111111111 | Comp_in: 1
+Time: 30000 | Clock: 1 | Value: 1111111111 | Comp_in: 0
+Time: 40000 | Clock: 1 | Value: 0111111111 | Comp_in: 1
+Time: 50000 | Clock: 1 | Value: 1111111111 | Comp_in: 0
+Time: 60000 | Clock: 1 | Value: 0111111111 | Comp_in: 1
+Time: 70000 | Clock: 1 | Value: 1111111111 | Comp_in: 0
+Time: 80000 | Clock: 1 | Value: 0111111111 | Comp_in: 1
+Time: 90000 | Clock: 1 | Value: 1111111111 | Comp_in: 1
+Time: 100000 | Clock: 1 | Value: 1111111111 | Comp_in: 0
+Time: 110000 | Clock: 1 | Value: 0111111111 | Comp_in: 0
+Time: 120000 | Clock: 1 | Value: 0011111111 | Comp_in: 1
+Time: 130000 | Clock: 1 | Value: 0111111111 | Comp_in: 1
+$finish called from file "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic_tb.v", line 47.
+$finish at simulation time               135000
+           V C S   S i m u l a t i o n   R e p o r t
+Time: 135000 ps
+CPU Time:      0.240 seconds;       Data structure size:   0.1Mb
+Mon Sep 30 13:18:10 2024
+Action sim config output written to output.json

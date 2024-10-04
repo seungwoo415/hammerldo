@@ -1,0 +1,29 @@
+
+# ***************************** SDF Annotate *****************************
+#
+# Static entries from SDF files:
+#
+#  IOPATH              =                   67
+#  PORTDELAY           =                   77
+#  SETUPHOLD           =                   20
+#  TIMINGCHECK(ALL)    =                   20
+#
+#
+
+# Annotated entries in elaborated design:
+#
+#  IOPATH Delays       =                   24
+#  INTERCONNECT(MSID)  =                   77
+#  Timing Checks       =                   40
+#  Negative Tchecks    =                   20
+#
+#  Annotated instances =                   22
+#  Total instances     =                   66
+#
+
+# Static entries in elaborated design:
+#  IOPATH Delays       =                   46
+#  Timing Checks       =                  120
+#
+# ************************************************************************
+#

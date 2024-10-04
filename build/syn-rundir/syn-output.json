@@ -1,0 +1,14 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "src/DigitalLDOLogic.v"
+    ],
+    "synthesis.inputs.top_module": "DigitalLDOLogic",
+    "synthesis.outputs.sdc": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf"
+}
