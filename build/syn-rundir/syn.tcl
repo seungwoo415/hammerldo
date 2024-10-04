@@ -136,5 +136,8 @@ puts "write_sdf > /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/l
 write_sdf > /home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/DigitalLDOLogic.mapped.sdf
 puts "write_design -innovus -hierarchical -gzip_files DigitalLDOLogic" 
 write_design -innovus -hierarchical -gzip_files DigitalLDOLogic
+puts "write_db -to_file pre_write_hdl_with_pg_pins" 
+write_db -to_file pre_write_hdl_with_pg_pins
+write_hdl -pg DigitalLDOLogic > dllogic.v
 puts "quit" 
 quit

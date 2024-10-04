@@ -364,20 +364,20 @@
 "object":"/designs/DigitalLDOLogic/instances_seq/pass_reg[0]",
 "type":"instance"},
 {"index": "1", 
- "date": "Fri Oct 04 09:40:27 UTC 2024",
- "seconds": 1728034827.9660149,
+ "date": "Fri Oct 04 20:25:30 UTC 2024",
+ "seconds": 1728073530.2792659,
  "netlist": "fv/DigitalLDOLogic/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir/fv/DigitalLDOLogic/fv_map.v.gz", 
- "netlist_mtime": "1728034827", 
- "netlist_timestamp": "Fri Oct 04 09:40:27 UTC 2024", 
+ "netlist_mtime": "1728073529", 
+ "netlist_timestamp": "Fri Oct 04 20:25:29 UTC 2024", 
  "netlist_size": "707", 
- "netlist_cksum": "3490180829", 
+ "netlist_cksum": "3059029295", 
  "design_name": "DigitalLDOLogic", 
  "synth_workdir": "/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/build/syn-rundir", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.577994 
+ "write_verif_file_runtime": 0.539988 
  }
 ]

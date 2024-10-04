@@ -20,12 +20,9 @@ def write_hdl_with_pg_pins(x: hammer_vlsi.HammerTool) -> bool:
 
 class DigitalLDODriver(CLIDriver): 
 
-    def get_extra_hierarchical_synthesis_hooks(self, driver: HammerDriver) -> Dict[str, List[HammerToolHookAction]]:
-        hooks = dict({
-            "DigitalLDOLogic": [
-                HammerTool.make_post_insertion_hook("write_outputs", write_hdl_with_pg_pins),
-            ],
-        })
+    def get_extra_synthesis_hooks(self) -> List[HammerToolHookAction]:
+
+        hooks = [HammerTool.make_post_insertion_hook("write_outputs", write_hdl_with_pg_pins)]
         return hooks
 
 if __name__ == '__main__':

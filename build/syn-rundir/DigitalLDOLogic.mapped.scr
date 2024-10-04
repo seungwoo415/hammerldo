@@ -1,6 +1,6 @@
 ######################################################################
 
-# Created by Genus(TM) Synthesis Solution 22.11-s104_1 on Fri Oct 04 02:40:29 PDT 2024
+# Created by Genus(TM) Synthesis Solution 22.11-s104_1 on Fri Oct 04 13:25:31 PDT 2024
 
 # This file contains the Genus script for design:DigitalLDOLogic
 
@@ -14,7 +14,7 @@ set_db -quiet phys_route_time_out 120.0
 set_db -quiet capacitance_per_unit_length_mmmc {}
 set_db -quiet resistance_per_unit_length_mmmc {}
 set_db -quiet lp_insert_clock_gating true
-set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 11 0.0 9.0} {to_generic 1 12 0 10} {first_condense 0 12 0 10} {PBS_Generic_Opt-Post 1 12 0.9910709999999998 9.991071} {{PBS_Generic-Postgen HBO Optimizations} 0 12 0.0 9.991071} {PBS_TechMap-Start 0 13 0.0 10.991071} {{PBS_TechMap-Premap HBO Optimizations} 0 13 0.0 10.991071} {second_condense 0 13 0 10} {reify 0 13 0 11} {global_incr_map 0 13 0 11} {{PBS_Techmap-Global Mapping} 0 13 -0.03435200000000016 10.956719} {{PBS_TechMap-Datapath Postmap Operations} 0 13 1.0 11.956719} {{PBS_TechMap-Postmap HBO Optimizations} 0 13 -5.599999999894578e-5 11.956663} {{PBS_TechMap-Postmap Clock Gating} 0 14 0.0 11.956663} {{PBS_TechMap-Postmap Cleanup} 0 14 0.0 11.956663} {PBS_Techmap-Post_MBCI 0 14 0.0 11.956663}}
+set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 10 0.0 8.0} {to_generic 0 10 0 8} {first_condense 1 11 0 8} {PBS_Generic_Opt-Post 1 11 0.9919419999999999 8.991942} {{PBS_Generic-Postgen HBO Optimizations} 0 11 0.0 8.991942} {PBS_TechMap-Start 0 11 0.0 8.991942} {{PBS_TechMap-Premap HBO Optimizations} 0 11 0.0 8.991942} {second_condense 0 11 0 9} {reify 0 11 0 9} {global_incr_map 0 11 0 9} {{PBS_Techmap-Global Mapping} 0 11 0.9666490000000003 9.958591} {{PBS_TechMap-Datapath Postmap Operations} 1 12 0.0 9.958591} {{PBS_TechMap-Postmap HBO Optimizations} 0 12 -6.49999999993156e-5 9.958526} {{PBS_TechMap-Postmap Clock Gating} 0 12 0.0 9.958526} {{PBS_TechMap-Postmap Cleanup} 0 12 -3.400000000119974e-5 9.958492} {PBS_Techmap-Post_MBCI 0 12 0.0 9.958492}}
 set_db -quiet timing_adjust_tns_of_complex_flops false
 set_db -quiet hdl_error_on_blackbox true
 set_db -quiet tinfo_tstamp_file .rs_cs199-apt.tstamp
@@ -24,7 +24,7 @@ set_db -quiet lp_clock_gating_prefix CLKGATE
 set_db -quiet lp_insert_clock_gating_incremental true
 set_db -quiet lp_clock_gating_register_aware true
 set_db -quiet use_area_from_lef true
-set_db -quiet flow_metrics_snapshot_uuid 206723af-3785-429a-9dfc-af0137beb40e
+set_db -quiet flow_metrics_snapshot_uuid e858f0bf-167c-4a23-9966-1f85d0624b55
 set_db -quiet read_qrc_tech_file_rc_corner true
 set_db -quiet auto_ungroup none
 set_db -quiet use_tiehilo_for_const duplicate
@@ -204,7 +204,7 @@ set_db -quiet dft_scan_style muxed_scan
 set_db -quiet dft_scanbit_waveform_analysis false
 # END DFT SECTION
 set_db -quiet design:DigitalLDOLogic .seq_reason_deleted_internal {}
-set_db -quiet design:DigitalLDOLogic .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 467} {cell_count 20} {utilization  0.00} {runtime 1 12 0 10} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 538} {cell_count 36} {utilization  0.00} {runtime 0 12 0 10} }{second_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 538} {cell_count 36} {utilization  0.00} {runtime 0 13 0 10} }{reify {wns 97317} {tns 0} {vep 0} {area 497} {cell_count 31} {utilization  0.00} {runtime 0 13 0 11} }{global_incr_map {wns 97336} {tns 0} {vep 0} {area 447} {cell_count 31} {utilization  0.00} {runtime 0 13 0 11} }}
+set_db -quiet design:DigitalLDOLogic .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 467} {cell_count 20} {utilization  0.00} {runtime 0 10 0 8} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 538} {cell_count 36} {utilization  0.00} {runtime 1 11 0 8} }{second_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 538} {cell_count 36} {utilization  0.00} {runtime 0 11 0 9} }{reify {wns 97317} {tns 0} {vep 0} {area 497} {cell_count 31} {utilization  0.00} {runtime 0 11 0 9} }{global_incr_map {wns 97336} {tns 0} {vep 0} {area 447} {cell_count 31} {utilization  0.00} {runtime 0 11 0 9} }}
 set_db -quiet design:DigitalLDOLogic .seq_mbci_coverage 0.0
 set_db -quiet design:DigitalLDOLogic .hdl_filelist {{default -sv {SYNTHESIS} {/home/aa/users/cs199-apt/cadence/digitallogic/asic_labs_fa23/lab2/src/DigitalLDOLogic.v} {} {}}}
 set_db -quiet design:DigitalLDOLogic .hdl_user_name DigitalLDOLogic
@@ -362,7 +362,7 @@ set_db -quiet source_verbose true
 ##
 ## Written by Genus(TM) Synthesis Solution version 22.11-s104_1
 ## flowkit v22.11-s004_1
-## Written on 02:40:29 04-Oct 2024
+## Written on 13:25:31 04-Oct 2024
 #############################################################
 #####   Flow Definitions   ##################################
 
@@ -417,7 +417,7 @@ if {[is_attribute flow_step_next -obj_type root]} {set_db flow_step_next {}}
 if {[is_attribute flow_working_directory -obj_type root]} {set_db flow_working_directory .}
 if {[is_attribute flow_branch -obj_type root]} {set_db flow_branch {}}
 if {[is_attribute flow_caller_data -obj_type root]} {set_db flow_caller_data {}}
-if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid 206723af-3785-429a-9dfc-af0137beb40e}
+if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid e858f0bf-167c-4a23-9966-1f85d0624b55}
 if {[is_attribute flow_starting_db -obj_type root]} {set_db flow_starting_db {}}
 if {[is_attribute flow_db_directory -obj_type root]} {set_db flow_db_directory dbs}
 if {[is_attribute flow_report_directory -obj_type root]} {set_db flow_report_directory reports}
